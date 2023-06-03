@@ -14,7 +14,7 @@ This Python script provides a countdown timer for a coffee brewing procedure acc
     ```bash
     python coffee_brewing_timer.py
     ```
-4. Follow the prompts in the terminal to begin the coffee brewing procedure.
+4. Press Enter/Return in the terminal to begin the coffee brewing procedure.
 5. The script will display the current step of the procedure and the remaining time for each step.
 6. After completing the coffee brewing procedure, the script will display a completion message.
 
