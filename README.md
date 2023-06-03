@@ -1,6 +1,6 @@
 # Coffee Brewing Procedure Timer
 
-This Python script provides a countdown timer for a coffee brewing procedure according to [James Hoffman's 2022 V60 brewing technique]|(https://youtu.be/1oB1oDrDkHM). It allows you to time each step of the procedure and ensures accurate timing for a perfect cup of coffee.
+This Python script provides a countdown timer for a coffee brewing procedure according to [James Hoffman's 2022 V60 brewing technique](https://youtu.be/1oB1oDrDkHM). It allows you to time each step of the procedure and ensures accurate timing for a perfect cup of coffee.
 
 ## Prerequisites
 
