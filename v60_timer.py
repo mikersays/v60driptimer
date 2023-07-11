@@ -1,20 +1,14 @@
 import time
 
-def countdown(duration):
-    while duration > 0:
-        minutes, seconds = divmod(duration, 60)
-        timeformat = f"{minutes:02d}:{seconds:02d}"
-        print(timeformat, end="\r")
-        time.sleep(1)
-        duration -= 1
+def format_time(seconds):
+    minutes, seconds = divmod(seconds, 60)
+    return f"{minutes:02d}:{seconds:02d}"
 
-def start_stopwatch():
-    start_time = time.time()
-    while True:
-        elapsed_time = time.time() - start_time
-        minutes, seconds = divmod(int(elapsed_time), 60)
-        timeformat = f"{minutes:02d}:{seconds:02d}"
-        print(timeformat, end="\r")
+def countdown(duration):
+    end_time = time.time() + duration
+    while time.time() < end_time:
+        remaining_time = int(end_time - time.time())
+        print(format_time(remaining_time), end="\r")
         time.sleep(1)
 
 def brew_coffee():
@@ -39,6 +33,6 @@ def brew_coffee():
         print(step)
         countdown(duration)
 
+    print("Coffee brewing procedure completed.")
+
 brew_coffee()
-print("Coffee brewing procedure completed.")
-exit()
